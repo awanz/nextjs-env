@@ -3,6 +3,12 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const name = process.env.MY_NAME;
+  console.log(name);
+
+  const name_public = process.env.NEXT_PUBLIC_MY_NAME;
+  console.log(name_public);
+
   return (
     <div className={styles.container}>
       <Head>
